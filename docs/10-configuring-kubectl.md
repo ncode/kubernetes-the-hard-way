@@ -15,17 +15,13 @@ curl --cacert ca.crt \
   https://server.kubernetes.local:6443/version
 ```
 
+Example output (build metadata omitted):
+
 ```text
 {
   "major": "1",
-  "minor": "32",
-  "gitVersion": "v1.32.3",
-  "gitCommit": "32cc146f75aad04beaaa245a7157eb35063a9f99",
-  "gitTreeState": "clean",
-  "buildDate": "2025-03-11T19:52:21Z",
-  "goVersion": "go1.23.6",
-  "compiler": "gc",
-  "platform": "linux/arm64"
+  "minor": "37",
+  "gitVersion": "v1.37.2"
 }
 ```
 
@@ -61,9 +57,9 @@ kubectl version
 ```
 
 ```text
-Client Version: v1.32.3
-Kustomize Version: v5.5.0
-Server Version: v1.32.3
+Client Version: v1.37.2
+Kustomize Version: v5.8.1
+Server Version: v1.37.2
 ```
 
 List the nodes in the remote Kubernetes cluster:
@@ -74,8 +70,8 @@ kubectl get nodes
 
 ```
 NAME     STATUS   ROLES    AGE    VERSION
-node-0   Ready    <none>   10m   v1.32.3
-node-1   Ready    <none>   10m   v1.32.3
+node-0   Ready    <none>   10m   v1.37.2
+node-1   Ready    <none>   10m   v1.37.2
 ```
 
 Next: [Provisioning Pod Network Routes](11-pod-network-routes.md)
